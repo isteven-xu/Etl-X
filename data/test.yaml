@@ -1,0 +1,25 @@
+job:
+  desc:
+    name:
+  content:
+    source:
+      type: mysql
+      host:
+      user:
+      password:
+      table:
+      num_type_column:
+      time_type_column:
+      num_partitions:
+      count_per_partitions:
+    target:
+      type: hive
+      schema: tmp
+      table: test
+      save_mode: OVERWRITE
+      count_per_partitions:
+      pk_column:
+      upsert_batch_size:
+      qulity:
+        type: MAX_VALUE
+        column: xxx
